@@ -9,9 +9,7 @@ $( document ).ready(function() {
 /*=========================================================================
                     Banner Particles
 =========================================================================*/
-particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {
-    
-});
+particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function() {  });
 
 /*=========================================================================
                     Color Change Effect On Banner Name

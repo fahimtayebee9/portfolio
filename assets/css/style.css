@@ -107,7 +107,9 @@ h1 {
   -webkit-filter: url(#goo);
   filter: url(#goo);
   transform: scaleX(-1);
-  offset-path: path(    "M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z"  );
+  offset-path: path(
+    "M64.3636364,29.4064278 C77.8909091,43.5203348 84.4363636,56 98.5454545,56 C112.654545,56 124,44.4117395 124,30.0006975 C124,15.5896556 112.654545,3.85282763 98.5454545,4.00139508 C84.4363636,4.14996252 79.2,14.6982509 66.4,29.4064278 C53.4545455,42.4803627 43.5636364,56 29.4545455,56 C15.3454545,56 4,44.4117395 4,30.0006975 C4,15.5896556 15.3454545,4.00139508 29.4545455,4.00139508 C43.5636364,4.00139508 53.1636364,17.8181672 64.3636364,29.4064278 Z"
+  );
 }
 
 .infinityChrome div:before,
@@ -292,12 +294,30 @@ h1 {
 .goo-outer {
   display: none;
 }
+/* =============================================
+                Scrollbar Style
+============================================= */
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #390077 0%, #c900d6 95%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 
 /* =============================================
                 Banner Section
 ============================================= */
 .banner {
-  background-color: #fff;
+  background-color: #fdfbff;
   height: 100vh;
   position: relative;
 }
@@ -350,112 +370,192 @@ h1 {
             Banner Content Area
 ============================================= */
 .content-body {
-    position: relative;
+  position: relative;
 }
 .bnr-rw {
-    min-height: 75vh;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+  min-height: 75vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 .bnr-content {
-    position: relative;
-    padding: 40px;
-    box-shadow: 0 0 12px 0px #efe5ff;
-    border-radius: 10px;
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 0 12px 0px #efe5ff;
+  border-radius: 10px;
 }
 .bn-title {
-    color: var(--defaulth4);
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: capitalize;
+  color: var(--defaulth4);
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .bn-name {
-    background: linear-gradient(to bottom,#390077 0%,#c900d6 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition-property: color;
-    transition: 0.2s all ease-in-out;
-    transform-origin: bottom center;
-    position: relative;
+  background: linear-gradient(to bottom, #390077 0%, #c900d6 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition-property: color;
+  transition: 0.2s all ease-in-out;
+  transform-origin: bottom center;
+  position: relative;
 }
 .bnr-btns {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 .bnr-btns ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 .bnr-btns ul li {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 .btn-custom {
-    display: inline-block;
-    background: linear-gradient(to right,#390077 0%,#c900d6 51%,#390077 100%);
-    color: #fff;
-    letter-spacing: 0;
-    font-family: "Roboto",sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 38px;
-    outline: none!important;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-size: 200% auto;
-    transition: 0.3s all ease-in-out;
-    text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(to right, #390077 0%, #c900d6 51%, #390077 100%);
+  color: #fff;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 38px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-size: 200% auto;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none;
 }
 
 .btn-custom:hover {
-    background-position: right center;
-    color: #fff;
+  background-position: right center;
+  color: #fff;
 }
 /* =============================================
             Banner Content Scrool Icon
 ============================================= */
-.scroll-icon{
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    transform: translate(0%,0%);
+.scroll-icon {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(0%, 0%);
 }
-.scroll-icon .abt-me{
-    text-decoration: none;
-    color: #c900d6;
-    box-shadow: 0 0 4px 0px #39007785;
-    padding: 15px 8px;
-    border-radius: 15px;
-    position: relative;
+.scroll-icon .abt-me {
+  text-decoration: none;
+  color: #c900d6;
+  /* box-shadow: 0 0 4px 0px #39007785; */
+  padding: 15px 8px;
+  border-radius: 15px;
+  position: relative;
 }
-.scroll-icon .abt-me::before{
-    text-decoration: none;
-    position: absolute;
-    content: "\f103";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 16px;
-    animation: loading_icon 3s linear infinite ;
-    -webkit-animation: loading_icon 1s linear infinite ;
-    top: 0;
-    left: 3px;
-    margin-top: 2px;
+.scroll-icon .abt-me::before {
+  text-decoration: none;
+  position: absolute;
+  content: "\f103";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  animation: loading_icon 3s linear infinite;
+  -webkit-animation: loading_icon 1s linear infinite;
+  top: 0;
+  left: 3px;
+  margin-top: 2px;
 }
 @keyframes loading_icon {
-    0% {
-      transform: translateY(0px);
-      color: #861cff;
-    }
-    50% {
-      transform: translateY(25px);
-      color: #c900d6;
-}
-    100% {
-      transform: translateY(0px);
-      color: #861cff;
-    }
+  0% {
+    transform: translateY(0px);
+    color: #861cff;
   }
+  50% {
+    transform: translateY(25px);
+    color: #c900d6;
+  }
+  100% {
+    transform: translateY(0px);
+    color: #861cff;
+  }
+}
+/* =============================================
+                About Me Section
+============================================= */
+.abt{
+  padding: 80px 0px;
+  background: #fff;
+}
+.abt-img{
+  text-align: center;
+  margin: auto;
+}
+.abt-con{
+  min-height: 300px;
+  align-items: center;
+  text-align: left;
+}
+.title{
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: small-caps;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  color: #15002c;
+}
+.title::before{
+  position: absolute;
+  content: '';
+  width: 10%;
+  height: 4px;
+  background: #390077;
+  right: 48%;
+  top: 52%;
+  animation: abt_bar 3s linear infinite;
+  -webkit-animation: abt_bar 3s linear infinite;
+}
+.title::after{
+  position: absolute;
+  content: '';
+  width: 18%;
+  height: 4px;
+  background: #390077;
+  right: 40%;
+  bottom: 21%;
+  animation: abt_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+}
+@keyframes abt_bar {
+  0% {
+    background: #24004e;
+  }
+  50% {
+    background: #a800b4;
+  }
+  100% {
+    background: #5e00c8;
+  }
+}
+.desc{
+  font-size: 18px;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+/* =============================================
+                Skills Section
+============================================= */
+.skills-body .title::before{
+  background: transparent!important;
+  width: 100%;
+  height: 100%;
+  content: 'my experience areas';
+  font-size: 74px;
+  top: 3%;
+  font-family: 'OpenSans Bold',sans-serif;
+}
