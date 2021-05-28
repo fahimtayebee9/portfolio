@@ -1,3 +1,4 @@
+@import url("keyframes.css");
 /* =============================================
                 Default CSS
 ============================================= */
@@ -460,7 +461,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
   font-size: 16px;
   animation: loading_icon 3s linear infinite;
-  -webkit-animation: loading_icon 1s linear infinite;
   top: 0;
   left: 3px;
   margin-top: 2px;
@@ -524,6 +524,7 @@ body::-webkit-scrollbar-thumb {
   right: 40%;
   bottom: 21%;
   animation: abt_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+  -webkit-animation: abt_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
 }
 @keyframes abt_bar {
   0% {
@@ -550,12 +551,246 @@ body::-webkit-scrollbar-thumb {
 /* =============================================
                 Skills Section
 ============================================= */
+.skills-body{
+  padding: 70px 0px;
+}
+.skills-body .title{
+  text-align: center;
+  font-size: 58px;
+}
 .skills-body .title::before{
   background: transparent!important;
   width: 100%;
   height: 100%;
   content: 'my experience areas';
   font-size: 74px;
-  top: 3%;
+  top: 0%;
+  left: 20%;
+  transform: translate(-20%, -20%);
   font-family: 'OpenSans Bold',sans-serif;
+  color: #24004ea6;
+  opacity: 0.1;
+  -webkit-transform: translate(-20%, -20%);
+  -moz-transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  -o-transform: translate(-20%, -20%);
+}
+.skills-body .title::after{
+  content: '';
+  display: none;
+}
+.frontend-skill,.backend-skill,.graphic-design{
+  margin-top: 35px;
+}
+.skill-header{
+  font-size: 38px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-variant: small-caps;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-rendering: optimizeSpeed;
+}
+.skill-box{
+  padding: 25px;
+  box-shadow: 0 0 15px 4px #39006712;
+  border-radius: 8px;
+  position: relative;
+}
+.skill-box .second{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: relative;
+}
+.skill-box .second img{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(50%,40%);
+  text-align: center;
+}
+.backend-skill .skill-box .second img{
+  transform: translate(50%,11%);
+}
+.skill-box .second h4{
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Open Sans',sans-serif;
+}
+.skill-desc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+  z-index: 99;
+  width: 100%;
+}
+.skill-desc .sk-p{
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.skill-box:hover .skill-desc{
+  opacity: 1;
+}
+.skill-box::before {
+  content: '';
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.7s all ease-in-out;
+  z-index: 9;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.skill-box::after {
+  content: '';
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.7s all ease-in-out;
+  z-index: 9;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.skill-box:hover::before{
+  opacity: 1;
+  height: 50%;
+}
+.skill-box:hover::after{
+  opacity: 1;
+  height: 50%;
+}
+
+/* GraphicDesign BG COLORs */
+.ps::before{
+  background-color: #37c6ffaf;
+  animation: ps_bf 3s linear infinite;
+  -webkit-animation: ps_bf 3s linear infinite;
+}
+.ps::after{
+  background-color: #28253aaf;
+  animation: ps_af 3s linear infinite;
+  -webkit-animation: ps_af 3s linear infinite;
+}
+.ai::before{
+  background-color: #41322Aaf;
+  animation: ai_bf 3s linear infinite;
+  -webkit-animation: ai_bf 3s linear infinite;
+}
+.ai::after{
+  background-color: #FF7E1Baf;
+  animation: ai_af 3s linear infinite;
+  -webkit-animation: ai_af 3s linear infinite;
+}
+.xd::before{
+  background-color: #FF2BC2af;
+  animation: xd_bf 3s linear infinite;
+  -webkit-animation: xd_bf 3s linear infinite;
+}
+.xd::after{
+  background-color: #2E001Eaf;
+  animation: xd_af 3s linear infinite;
+  -webkit-animation: xd_af 3s linear infinite;
+}
+.id::before{
+  background-color: #412534af;
+  animation: id_bf 3s linear infinite;
+  -webkit-animation: id_bf 3s linear infinite;
+}
+.id::after{
+  background-color: #EB43A3af;
+  animation: id_af 3s linear infinite;
+  -webkit-animation: id_af 3s linear infinite;
+}
+
+/* FRONTEND BG COLORs */
+.html::before{
+  background-color: #f55200af;
+  animation: html_bf 3s linear infinite;
+}
+.html::after{
+  background-color: #ff7930af;
+  animation: html_af 3s linear infinite;
+}
+.css::before{
+  background-color: #005cbfaf;
+  animation: css_bf 3s linear infinite;
+  -webkit-animation: css_bf 3s linear infinite;
+}
+.css::after{
+  background-color: #0fabffaf;
+  animation: css_af 3s linear infinite;
+  -webkit-animation: css_af 3s linear infinite;
+}
+.js::before{
+  background-color: #FED81Daf;
+  animation: js_bf 3s linear infinite;
+  -webkit-animation: js_bf 3s linear infinite;
+}
+.js::after{
+  background-color: #ac8f00af;
+  animation: js_af 3s linear infinite;
+  -webkit-animation: js_af 3s linear infinite;
+}
+.react::before{
+  background-color: #61DAFBaf;
+  animation: react_bf 3s linear infinite;
+}
+.react::after{
+  background-color: #006e99af;
+  animation: react_af 3s linear infinite;
+}
+
+/* backend skills */
+.php::before{
+  background-color: #8993BEaf;
+  animation: php_bf 3s linear infinite;
+  -webkit-animation: php_bf 3s linear infinite;
+}
+.php::after{
+  background-color: #232531af;
+  animation: php_af 3s linear infinite;
+  -webkit-animation: php_af 3s linear infinite;
+}
+.laravel::before{
+  background-color: #ff3c39af;
+  animation: laravel_bf 3s linear infinite;
+  -webkit-animation: laravel_bf 3s linear infinite;
+}
+.laravel::after{
+  background-color: #E02828af;
+  animation: laravel_af 3s linear infinite;
+  -webkit-animation: laravel_af 3s linear infinite;
+}
+.wp::before{
+  background-color: #74BBE7af;
+  animation: wp_bf 3s linear infinite;
+  -webkit-animation: wp_bf 3s linear infinite;
+}
+.wp::after{
+  background-color: #005580af;
+  animation: wp_af 3s linear infinite;
+  -webkit-animation: wp_af 3s linear infinite;
 }

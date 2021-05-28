@@ -1,0 +1,249 @@
+@keyframes html_bf {
+  0% {
+    background-color: #ff6c1daf;
+  }
+  50% {
+    background-color: #f55200af;
+  }
+  100% {
+    background-color: #ff6c1daf;
+  }
+}
+@keyframes html_af {
+  0% {
+    background-color: #f55200af;
+  }
+  50% {
+    background-color: #ff6c1daf;
+  }
+  100% {
+    background-color: #f55200af;
+  }
+}
+@keyframes css_bf {
+  0% {
+    background-color: #003b7aaf;
+  }
+  50% {
+    background-color: #0fabffaf;
+  }
+  100% {
+    background-color: #003b7aaf;
+  }
+}
+@keyframes css_af {
+  0% {
+    background-color: #0fabffaf;
+  }
+  50% {
+    background-color: #003b7aaf;
+  }
+  100% {
+    background-color: #0fabffaf;
+  }
+}
+@keyframes js_bf {
+  0% {
+    background-color: #ac8f00af;
+  }
+  50% {
+    background-color: #fed81daf;
+  }
+  100% {
+    background-color: #ac8f00af;
+  }
+}
+@keyframes js_af {
+  0% {
+    background-color: #fed81daf;
+  }
+  50% {
+    background-color: #ac8f00af;
+  }
+  100% {
+    background-color: #fed81daf;
+  }
+}
+@keyframes react_bf {
+  0% {
+    background-color: #006e99af;
+  }
+  50% {
+    background-color: #61dafbaf;
+  }
+  100% {
+    background-color: #006e99af;
+  }
+}
+@keyframes react_af {
+  0% {
+    background-color: #61dafbaf;
+  }
+  50% {
+    background-color: #006e99af;
+  }
+  100% {
+    background-color: #61dafbaf;
+  }
+}
+
+@keyframes php_bf {
+  0% {
+    background-color: #8993beaf;
+  }
+  50% {
+    background-color: #232531af;
+  }
+  100% {
+    background-color: #8993beaf;
+  }
+}
+@keyframes php_af {
+  0% {
+    background-color: #232531af;
+  }
+  50% {
+    background-color: #8993beaf;
+  }
+  100% {
+    background-color: #232531af;
+  }
+}
+
+@keyframes laravel_bf {
+  0% {
+    background-color: #ff3c39af;
+  }
+  50% {
+    background-color: #e02828af;
+  }
+  100% {
+    background-color: #ff3c39af;
+  }
+}
+@keyframes laravel_af {
+  0% {
+    background-color: #e02828af;
+  }
+  50% {
+    background-color: #ff3c39af;
+  }
+  100% {
+    background-color: #e02828af;
+  }
+}
+
+@keyframes wp_bf {
+  0% {
+    background-color: #74bbe7af;
+  }
+  50% {
+    background-color: #005580af;
+  }
+  100% {
+    background-color: #74bbe7af;
+  }
+}
+@keyframes wp_af {
+  0% {
+    background-color: #005580af;
+  }
+  50% {
+    background-color: #74bbe7af;
+  }
+  100% {
+    background-color: #005580af;
+  }
+}
+
+@keyframes ps_bf {
+  0% {
+    background-color: #28253aaf;
+  }
+  50% {
+    background-color: #37c6ffaf;
+  }
+  100% {
+    background-color: #28253aaf;
+  }
+}
+@keyframes ps_af {
+  0% {
+    background-color: #37c6ffaf;
+  }
+  50% {
+    background-color: #28253aaf;
+  }
+  100% {
+    background-color: #37c6ffaf;
+  }
+}
+
+@keyframes ai_bf {
+  0% {
+    background-color: #FF7E1Baf;
+  }
+  50% {
+    background-color: #41322Aaf;
+  }
+  100% {
+    background-color: #FF7E1Baf;
+  }
+}
+@keyframes ai_af {
+  0% {
+    background-color: #41322Aaf;
+  }
+  50% {
+    background-color: #FF7E1Baf;
+  }
+  100% {
+    background-color: #41322Aaf;
+  }
+}
+
+@keyframes id_bf {
+  0% {
+    background-color: #EB43A3af;
+  }
+  50% {
+    background-color: #412534af;
+  }
+  100% {
+    background-color: #EB43A3af;
+  }
+}
+@keyframes id_af {
+  0% {
+    background-color: #412534af;
+  }
+  50% {
+    background-color: #EB43A3af;
+  }
+  100% {
+    background-color: #412534af;
+  }
+}
+
+@keyframes xd_bf {
+  0% {
+    background-color: #FF2BC2af;
+  }
+  50% {
+    background-color: #2E001Eaf;
+  }
+  100% {
+    background-color: #FF2BC2af;
+  }
+}
+@keyframes xd_af {
+  0% {
+    background-color: #2E001Eaf;
+  }
+  50% {
+    background-color: #FF2BC2af;
+  }
+  100% {
+    background-color: #2E001Eaf;
+  }
+}
