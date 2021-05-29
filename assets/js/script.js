@@ -241,3 +241,11 @@ $('.second.circle-xd').circleProgress({
 setTimeout(function() { circle_xd.circleProgress('value', 0.76); }, 1000);
 var canvasList_xd = circle_xd.find('canvas');
 canvasList_xd[1].style.display = 'none';
+
+/*=========================================================================
+                    PROJECT FILTERING
+=========================================================================*/
+$('#easy-filter-wrap').easyFilter({
+    animation: 'slide',
+    duration: 400
+});

@@ -6,8 +6,7 @@
   padding: 0;
   margin: 0;
 }
-h4,
-h1 {
+h4,h1 {
   font-family: "OpenSans", sans-serif;
   margin: 0;
 }
@@ -144,77 +143,6 @@ h1 {
   animation-delay: -4.6s;
 }
 
-@keyframes moveSvg {
-  0% {
-    offset-distance: 0%;
-  }
-
-  25% {
-    background: #6c6ce5;
-  }
-
-  75% {
-    background: #ffd15c;
-  }
-
-  100% {
-    offset-distance: 100%;
-  }
-}
-
-@keyframes rotate {
-  50% {
-    transform: rotate(360deg);
-    margin-left: 0;
-  }
-
-  50.0001%,
-  100% {
-    margin-left: -60px;
-  }
-}
-
-@keyframes move {
-  0%,
-  50% {
-    left: -8px;
-  }
-
-  25% {
-    background: #ffd15c;
-  }
-
-  75% {
-    background: #583d72;
-  }
-
-  50.0001%,
-  100% {
-    left: auto;
-    right: -8px;
-  }
-}
-
-@keyframes drop1 {
-  100% {
-    transform: translate(32px, 8px) scale(0);
-  }
-}
-
-@keyframes drop2 {
-  0% {
-    transform: translate(0, 0) scale(0.9);
-  }
-
-  100% {
-    transform: translate(32px, 0px) scale(0);
-    -webkit-transform: translate(32px, 0px) scale(0);
-    -moz-transform: translate(32px, 0px) scale(0);
-    -ms-transform: translate(32px, 0px) scale(0);
-    -o-transform: translate(32px, 0px) scale(0);
-  }
-}
-
 .wrapper {
   position: relative;
   text-align: center;
@@ -234,20 +162,7 @@ h1 {
   transition-property: color;
   transition: 0.2s all ease-in-out;
 }
-@keyframes loading {
-  0% {
-    transform: translateY(0px);
-    color: #31326f;
-  }
-  50% {
-    transform: translateY(50px);
-    color: #ff4c60;
-  }
-  100% {
-    transform: translateY(0px);
-    color: #31326f;
-  }
-}
+
 .circle-1 {
   animation-delay: 0.1s;
 }
@@ -465,20 +380,7 @@ body::-webkit-scrollbar-thumb {
   left: 3px;
   margin-top: 2px;
 }
-@keyframes loading_icon {
-  0% {
-    transform: translateY(0px);
-    color: #861cff;
-  }
-  50% {
-    transform: translateY(25px);
-    color: #c900d6;
-  }
-  100% {
-    transform: translateY(0px);
-    color: #861cff;
-  }
-}
+
 /* =============================================
                 About Me Section
 ============================================= */
@@ -504,7 +406,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   color: #15002c;
 }
-.title::before{
+.title::before, .border-bar::before{
   position: absolute;
   content: '';
   width: 10%;
@@ -515,7 +417,7 @@ body::-webkit-scrollbar-thumb {
   animation: abt_bar 3s linear infinite;
   -webkit-animation: abt_bar 3s linear infinite;
 }
-.title::after{
+.title::after, .border-bar::after{
   position: absolute;
   content: '';
   width: 18%;
@@ -526,17 +428,7 @@ body::-webkit-scrollbar-thumb {
   animation: abt_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
   -webkit-animation: abt_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
 }
-@keyframes abt_bar {
-  0% {
-    background: #24004e;
-  }
-  50% {
-    background: #a800b4;
-  }
-  100% {
-    background: #5e00c8;
-  }
-}
+
 .desc{
   font-size: 18px;
   margin: 0;
@@ -793,4 +685,138 @@ body::-webkit-scrollbar-thumb {
   background-color: #005580af;
   animation: wp_af 3s linear infinite;
   -webkit-animation: wp_af 3s linear infinite;
+}
+
+/* =============================================
+            HAPYY CUSTOMERS SECTION
+============================================= */
+.hp-counts-body{
+  padding: 80px 0px;
+  background-image: url(../images/LOGOS/pexels-tranmautritam-285814.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000915e3;
+  background-blend-mode: overlay;
+  min-height: 100px;
+}
+.hp-box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+}
+.hp-icon{
+  margin-right: 15px;
+  padding: 15px;
+  max-width: 25%;
+  background: #d9c1ff;
+  border-radius: 5px;
+  animation: hp_animate 2s linear infinite;
+  -webkit-animation: hp_animate 2s linear infinite;
+}
+.hp-count-title{
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-overflow: clip;
+  color: white;
+}
+.hp-count{
+  margin: 0;
+  font-size: 34px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-overflow: clip;
+  color: white;
+}
+
+/* =============================================
+            RECENT CLIENTS SECTION
+============================================= */
+.recent-projects{
+  padding: 70px 0px;
+}
+.recent-projects .title::after{
+  display: none;
+}
+.recent-projects .title::before{
+  background: transparent!important;
+  width: 100%;
+  height: 100%;
+  content: 'my latest portfolio';
+  font-size: 74px;
+  top: 0%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+  font-family: 'OpenSans Bold',sans-serif;
+  color: #24004ea6;
+  opacity: 0.1;
+  -webkit-transform: translate(-20%, -20%);
+  -moz-transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  -o-transform: translate(-20%, -20%);
+}
+.recent-projects .title{
+  text-align: left;
+  color: #24004e;
+}
+.border-bar{
+  position: relative;
+}
+.border-bar::before{
+  left: 0%;
+  top: 45%;
+}
+.border-bar::after{
+  right: 73%;
+  top: 45%;
+  width: 10%;
+}
+.flex-list{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: auto;
+  justify-content: start;
+}
+.flex-list li{
+  margin: 5px;
+  font-size: 18px;
+  animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+  -webkit-animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+}
+.flex-list li:first-child, .flex-list li:last-child{
+  font-size: 14px;
+}
+.flex-list li:first-child{
+  padding-left: 10%;
+}
+.filter{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.filter-btns{
+  justify-content: end;
+  align-items: center;
+  text-align: right;
+  margin: 20px 0px;
+}
+.btn-filter{
+  font-size: 18px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #15002c;
+  box-shadow: 0 0 10px 0px #15002c40;
+  margin-left: 15px;
 }

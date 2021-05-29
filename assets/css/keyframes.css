@@ -247,3 +247,126 @@
     background-color: #2E001Eaf;
   }
 }
+
+@keyframes hp_animate {
+  0% {
+    background-color: #d9c1ff;
+  }
+  50% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #d9c1ff;
+  }
+}
+@keyframes rp_bar {
+  0% {
+    color: #24004e;
+  }
+  50% {
+    color: #a800b4;
+  }
+  100% {
+    color: #5e00c8;
+  }
+}
+
+@keyframes moveSvg {
+  0% {
+    offset-distance: 0%;
+  }
+
+  25% {
+    background: #6c6ce5;
+  }
+
+  75% {
+    background: #ffd15c;
+  }
+
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(360deg);
+    margin-left: 0;
+  }
+
+  50.0001%,
+  100% {
+    margin-left: -60px;
+  }
+}
+
+@keyframes move {
+  0%,
+  50% {
+    left: -8px;
+  }
+
+  25% {
+    background: #ffd15c;
+  }
+
+  75% {
+    background: #583d72;
+  }
+
+  50.0001%,
+  100% {
+    left: auto;
+    right: -8px;
+  }
+}
+
+@keyframes drop1 {
+  100% {
+    transform: translate(32px, 8px) scale(0);
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+  }
+
+  100% {
+    transform: translate(32px, 0px) scale(0);
+    -webkit-transform: translate(32px, 0px) scale(0);
+    -moz-transform: translate(32px, 0px) scale(0);
+    -ms-transform: translate(32px, 0px) scale(0);
+    -o-transform: translate(32px, 0px) scale(0);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0px);
+    color: #31326f;
+  }
+  50% {
+    transform: translateY(50px);
+    color: #ff4c60;
+  }
+  100% {
+    transform: translateY(0px);
+    color: #31326f;
+  }
+}
+@keyframes loading_icon {
+  0% {
+    transform: translateY(0px);
+    color: #861cff;
+  }
+  50% {
+    transform: translateY(25px);
+    color: #c900d6;
+  }
+  100% {
+    transform: translateY(0px);
+    color: #861cff;
+  }
+}
