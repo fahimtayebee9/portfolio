@@ -744,6 +744,21 @@ body::-webkit-scrollbar-thumb {
 ============================================= */
 .recent-projects{
   padding: 70px 0px;
+  position: relative;
+}
+.recent-projects::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background-image: url(../images/pexels-henry-&-co-2455166.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(7 0 14);
+  background-blend-mode: overlay;
 }
 .recent-projects .title::after{
   display: none;
@@ -758,7 +773,7 @@ body::-webkit-scrollbar-thumb {
   left: 20%;
   transform: translate(-20%, -20%);
   font-family: 'OpenSans Bold',sans-serif;
-  color: #24004ea6;
+  color: #ffffffb6;
   opacity: 0.1;
   -webkit-transform: translate(-20%, -20%);
   -moz-transform: translate(-20%, -20%);
@@ -767,19 +782,21 @@ body::-webkit-scrollbar-thumb {
 }
 .recent-projects .title{
   text-align: left;
-  color: #24004e;
+  color: #ffffff;
 }
 .border-bar{
   position: relative;
 }
-.border-bar::before{
+.recent-projects  .border-bar::before{
   left: 0%;
   top: 45%;
+  background-color: white;
 }
-.border-bar::after{
+.recent-projects .border-bar::after{
   right: 73%;
   top: 45%;
   width: 10%;
+  background-color: white;
 }
 .flex-list{
   display: flex;
@@ -791,8 +808,9 @@ body::-webkit-scrollbar-thumb {
 .flex-list li{
   margin: 5px;
   font-size: 18px;
-  animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
-  -webkit-animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite;
+  color: white;
+  /* animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite; */
+  /* -webkit-animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite; */
 }
 .flex-list li:first-child, .flex-list li:last-child{
   font-size: 14px;
@@ -816,7 +834,123 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
-  color: #15002c;
-  box-shadow: 0 0 10px 0px #15002c40;
+  color: #fff;
+  box-shadow: 0 0 10px 0px #ffffff29;
   margin-left: 15px;
+}
+.btn-filter.active, .btn-filter.focus{
+  background: violet!important;
+}
+.filter{
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+.project-box{
+  position: relative;
+  box-shadow: 0 0 10px 6px #15002c0d;
+  border-radius: 10px;
+}
+.project-box::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  background: #cb9cffd6;
+  transition: 0.4s all ease-in-out;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -ms-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+}
+.project-box::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  background: #dab3ffd9;
+  transition: 0.4s all ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -ms-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+}
+.project-img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project-img img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.project-detail{
+  padding: 15px;
+}
+.p-title{
+  font-size: 28px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 700;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.p-desc{
+  font-size: 18px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 50;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.project-btns-bottom{
+  bottom: 0;
+  right: 0%;
+}
+.project-btns{
+  position: absolute;
+  content: '';
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  z-index: 9;
+}
+.project-btns-top{
+  top: 0;
+  left: 0%;
+}
+.btn-view{
+  margin-bottom: 25px;
+}
+.project-box:hover .project-btns-top{
+  top: 35%;
+  left: 24%;
+  opacity: 1;
+}
+.project-box:hover .project-btns-bottom{
+  bottom: 35%;
+  right: 24%;
+  opacity: 1;
+}
+.project-btns:last-child .btn-custom{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.project-box:hover::before{
+  height: 50%;
+  width: 100%;
+}
+.project-box:hover::after{
+  height: 50%;
+  width: 100%;
+}
+.project-all .btn-custom{
+  font-size: 18px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 600;
 }

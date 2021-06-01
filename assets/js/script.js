@@ -249,3 +249,11 @@ $('#easy-filter-wrap').easyFilter({
     animation: 'slide',
     duration: 400
 });
+
+// For PROJECT BOX TILT EFFECT
+VanillaTilt.init(document.querySelector(".img-hover"), {
+    max: 25,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".img-hover"));

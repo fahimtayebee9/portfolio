@@ -1,0 +1,44 @@
+<div class="col-md-12 m-auto">
+                        <div class="filter" id="easy-filter-wrap">
+                            <div class="filter-btns">
+                                <!-- Filter Controls -->
+                                <button type="button " class="btn btn-filter" data-easyfilter="*">all</button>
+                                <button type="button " class="btn btn-filter" data-easyfilter="frontend">frontend</button>
+                                <button type="button " class="btn btn-filter" data-easyfilter="graphics">graphics</button>
+                                <button type="button " class="btn btn-filter" data-easyfilter="backend">backend</button>
+                            </div>
+                            <div class="filtered-projects">
+                                <!-- Filterable Elements Here -->
+                                <div data-easyitem="frontend">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="project-box">
+                                                <div class="project-img">
+                                                    <img src="assets/images/LOGOS/pexels-negative-space-160107.jpg" class="img-fluid w-100" alt="">
+                                                </div>
+                                                <div class="project-detail">
+                                                    <h1 class="p-title">title</h1>
+                                                    <p  class="p-title">
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque distinctio pariatur
+                                                        doloribus sapiente sit tempore tenetur magnam, temporibus eligendi quo deleniti ipsam, 
+                                                        praesentium ea voluptatum ex laudantium maiores dignissimos, dolor reiciendis a fugit quas! 
+                                                        Temporibus praesentium blanditiis officia nemo deserunt?
+                                                    </p>
+                                                    <div class="project-btns d-flex">
+                                                        <a href="#" class="btn btn-view btn-custom">View Project</a>
+                                                        <a href="#" class="btn btn-view btn-custom">Live Preview</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-easyitem="graphics">
+
+                                </div>
+                                <div data-easyitem="backend">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
