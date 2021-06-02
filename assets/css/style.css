@@ -308,6 +308,7 @@ body::-webkit-scrollbar-thumb {
 }
 .bn-name {
   background: linear-gradient(to bottom, #390077 0%, #c900d6 95%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 48px;
@@ -740,7 +741,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* =============================================
-            RECENT CLIENTS SECTION
+            RECENT PRojects SECTION
 ============================================= */
 .recent-projects{
   padding: 70px 0px;
@@ -809,8 +810,6 @@ body::-webkit-scrollbar-thumb {
   margin: 5px;
   font-size: 18px;
   color: white;
-  /* animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite; */
-  /* -webkit-animation: rp_bar 3s cubic-bezier(0.8, 0.5, 0.2, 1.4) infinite; */
 }
 .flex-list li:first-child, .flex-list li:last-child{
   font-size: 14px;
@@ -953,4 +952,65 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
   font-family: 'Montserrat',sans-serif;
   font-weight: 600;
+}
+
+/* =============================================
+            CLIENTS REVIEW SECTION
+============================================= */
+.clients-review-body{
+  padding: 70px 0px;
+  background-color: #f8f1ff;
+  background-blend-mode: overlay;
+  background-image: url(../images/pexels-photo-2387532.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clients-review-body .header{
+  margin-bottom: 50px;
+}
+.heading-title{
+  font-size: 22px;
+  margin: 0;
+  font-family: 'DM Serif Text',sans-serif;
+  color: #1c003a;
+  font-weight: 700;
+}
+.clients-review-body .title::before,.clients-review-body .title::after{
+  display: none;
+}
+.clients-review-body .owl-nav{
+  position: absolute;
+  top: 24%;
+  right: -6%;
+  box-shadow: -6px 10px 20px 0px #1c003a6b;
+}
+.clients-review-body .owl-carousel .owl-nav button.owl-prev, .clients-review-body .owl-carousel .owl-nav button.owl-next,.clients-review-body .owl-carousel button.owl-dot{
+  padding: 0!important;
+  padding: 15px!important;
+  background: white!important;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+.clients-review-body .owl-carousel .owl-nav button.owl-prev:hover, .clients-review-body .owl-carousel .owl-nav button.owl-next:hover{
+  padding: 0!important;
+  padding: 15px!important;
+  background: rgb(92, 39, 136)!important;
+  color: white!important;
+}
+.owl-nav .owl-prev , .owl-nav .owl-next{
+  display: block;
+} 
+.single-testimonial{
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  min-height: 180px;
 }

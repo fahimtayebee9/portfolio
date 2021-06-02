@@ -257,3 +257,40 @@ VanillaTilt.init(document.querySelector(".img-hover"), {
 });
 
 VanillaTilt.init(document.querySelectorAll(".img-hover"));
+
+/*=========================================================================
+                    CLIENT REVIEW
+=========================================================================*/
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:30,
+        nav:true,
+        autoplaySpeed: 3000,
+        navSpeed: 3000,
+        paginationSpeed: 3000,
+        slideSpeed: 3000,
+        smartSpeed: 3000,
+        autoplay: true,
+        dots: false,
+        navText: ["<i class='fas fa-arrow-up'></i>", "<i class='fas fa-arrow-down'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },			
+            
+            767:{
+                items:2
+            },
+            1200:{
+                items:2
+            },
+            2400:{
+                items:3
+            }
+        }
+    });
+});
